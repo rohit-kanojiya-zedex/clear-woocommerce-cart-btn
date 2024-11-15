@@ -1,0 +1,70 @@
+.button-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.wcc_btn_loader {
+    width: 30px;
+    height: 30px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: none;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#wcc-clear-cart-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#wcc-clear-cart-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#wcc-clear-cart-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+#wcc-clear-cart-btn:active {
+    transform: translateY(1px);
+    background-color: #004085;
+}
+
+@media screen and (max-width: 768px) {
+    #wcc-clear-cart-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #wcc-clear-cart-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
